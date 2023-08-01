@@ -28,7 +28,7 @@ function App() {
 
       setTagCount(tags);
       setUrl(url);
-      Axios.post("https://backendcontadortags.vercel.app/tagshtml", {
+      Axios.post("http://localhost:3001/tagshtml", {
         url: url,
         tags: tagsToSend,
       })
